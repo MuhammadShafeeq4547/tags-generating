@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Tags</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+            color: white;
+            cursor: -webkit-grab;
+        }
+
+        .input {
+            width: 400px;
+            height: 45px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid wheat;
+            outline: none;
+            margin-top: 30px;
+            padding-left: 20px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .parent {
+            width: 800px;
+            /* border: 1px solid white; */
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .anim {
+            animation: anim .8s linear infinite;
+        }
+
+        @keyframes anim {
+            0% {
+                background-color: white;
+            }
+
+            100% {
+                background-color: gold;
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            .parent {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width:450px) {
+            .input {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main">
+        <h1>Generate Tags</h1>
+        <input type="text" name="text" id="" class="input">
+        <div class="parent"></div>
+    </header>
+
+
+    <script src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
